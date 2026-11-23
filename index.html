@@ -9,15 +9,25 @@ Sergio Ramirez
 <html>
 <head>
   <title>Subject Detection</title>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0"></script>
+  <link rel= "stylesheet" href="style.css">
   
 </head>
 
   <body>
-
-
-
+    <section id="droparea">
     
+      <div id="dropzone">
+        Drag image into here!
+      </div>
+      <input type="file" id="imageInpit" accept="image/*" style="display:none;">
+      <img id="preview" width="300" style="display:none; margin-top:10px:">
+      <p id="result">Loading model...</p>
+    </section>
+
+
+    <script src="script.js"></script>
   </body>
 
   
